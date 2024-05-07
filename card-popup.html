@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Card popup</title>
+</head>
+
+<body>
+  <div class="header">
+    <p class="player__field"></p>
+    <!-- <button id="btn__close--all" class="btn">Close For All</button>
+    <button id="btn__close--self" class="btn">Close For Self</button> -->
+  </div>
+  <div class="card">
+    <div class="card__wrapper">
+      <div class="card__side card__side--front is-active">
+      </div>
+      <div class="card__side card__side--back">
+        <h3 class="card__side--description"></h3>
+        <p class="card__side--effect"></p>
+        <h2 class="card__side--name"></h2>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/src/card.ts"></script>
+</body>
+
+</html>

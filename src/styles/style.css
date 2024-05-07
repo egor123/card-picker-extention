@@ -1,0 +1,93 @@
+body {
+  overflow: hidden;
+  margin: 9px;
+}
+
+#app {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  gap: 18px;
+}
+
+button {
+  background: none;
+  border: none;
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  padding: 0;
+}
+
+button::before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: -1;
+  transition: background-color 0.2s ease;
+}
+button:hover::before{
+  background-color: rgba(128, 128, 128, 0.3);
+}
+select:focus {
+  color: white;
+}
+select {
+  cursor: pointer;
+  background: none;
+  border-color: #fff;
+  border-radius: 5px;
+  border-width: 2px;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  margin-left: auto;
+}
+
+select * {
+  background-color: rgb(70, 74, 100);
+}
+
+.icon {
+  left: 0;
+  background: white;
+  mask: url(/icon.svg) 0% 0% / 30px;
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
+button .tooltip,
+select .tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgba(99, 99, 99, 0.9);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  border-color: #fff;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 80%;
+  pointer-events: none;
+}
+
+button:hover .tooltip,
+select:hover .tooltip {
+  visibility: visible;
+}

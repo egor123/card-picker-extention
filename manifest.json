@@ -1,0 +1,15 @@
+{
+    "name": "Card Picker",
+    "version": "0.1.0",
+    "manifest_version": 1,
+    "icon": "/icon.svg",
+    "description": "Pick random cards from difirent decks",
+    "author": "N0N4ME",
+    "action": {
+      "title": "Card Picker",
+      "icon": "/icon.svg",
+      "popover": "/",
+      "height": 48,
+      "width": 350
+    }
+  }
