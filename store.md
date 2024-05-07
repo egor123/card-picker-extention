@@ -9,3 +9,7 @@ tags:
 manifest: https://card-picker-extention.onrender.com/manifest.json
 learn-more: https://github.com/egor123/card-picker-extention
 ---
+
+# Card Picker Extension for owlbear.rodeo
+
+![Demo](preview.gif)
